@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// rotta per Employees
+Route::get('/emps', 'EmployeeController@index')
+-> name('emps-index');
+
+Route::get('/emps/{id}', 'EmployeeController@show')
+-> name('emps-show');
