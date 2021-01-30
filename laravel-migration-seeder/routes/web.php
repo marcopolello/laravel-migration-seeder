@@ -29,3 +29,9 @@ Route::get('/brands', 'BrandController@index')
 
 Route::get('/brands/{id}', 'BrandController@show')
 -> name('brands-show');
+
+Route::get('/locations', 'LocationController@index')
+-> name('locations-index');
+
+Route::get('/locations/{id}', 'LocationController@show')
+-> name('locations-show');
