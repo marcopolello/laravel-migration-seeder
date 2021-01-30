@@ -23,3 +23,9 @@ Route::get('/emps', 'EmployeeController@index')
 
 Route::get('/emps/{id}', 'EmployeeController@show')
 -> name('emps-show');
+
+Route::get('/brands', 'BrandController@index')
+-> name('brands-index');
+
+Route::get('/brands/{id}', 'BrandController@show')
+-> name('brands-show');
